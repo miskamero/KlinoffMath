@@ -1,4 +1,6 @@
+MANIFEST.in
 klinoffmath.py
+nofnof.wav
 setup.py
 klinoff_math.egg-info/PKG-INFO
 klinoff_math.egg-info/SOURCES.txt
