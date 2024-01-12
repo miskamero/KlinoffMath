@@ -114,3 +114,60 @@ class KlinoffMath:
         play_obj.wait_done()
         return print(f"{math.e}\ne!! {nofnof}")
     
+    @staticmethod
+    def τ():
+        play_obj = KlinoffMath.wave_obj.play()
+        play_obj.wait_done()
+        return print(f"{math.tau}\nτ!! {nofnof}")
+    
+    @staticmethod
+    def numIs(a):
+        # calculate the remainder of a / 2
+        remainder = a % 2
+        # if remainder is 0, then number is even
+        if remainder == 0:
+            play_obj = KlinoffMath.wave_obj.play()
+            play_obj.wait_done()
+            return print(f"{a}\nIs Even!! {nofnof}")
+        else:
+            play_obj = KlinoffMath.wave_obj.play()
+            play_obj.wait_done()
+            return print(f"{a}\nIs Odd!! {nofnof}")
+    
+    @staticmethod
+    def φ(n):
+        amount = 0
+        for k in range(1, n + 1):
+            if math.gcd(n, k) == 1:
+                amount += 1
+        return amount
+
+    
+    @staticmethod
+    def NöfNöf():
+        play_obj = KlinoffMath.wave_obj.play()
+        play_obj.wait_done()
+        return print(f"{nofnof}\nNöfNöf!! {nofnof}")
+    
+
+    @staticmethod
+    def fib(n):
+        if n <= 0:
+            return []
+        elif n == 1:
+            return [0]
+        elif n == 2:
+            return [0, 1]
+        else:
+            fib_seq = [0, 1]
+            while len(fib_seq) < n:
+                fib_seq.append(fib_seq[-1] + fib_seq[-2])
+            return fib_seq
+        
+    @staticmethod
+    def fibonacci(a):
+        play_obj = KlinoffMath.wave_obj.play()
+        play_obj.wait_done()
+        return print(f"{KlinoffMath.fib(a)}\nFibonacci!! {nofnof}")
+    
+    # more to come... nöfnöf out
